@@ -1,0 +1,24 @@
+.post h1 {
+	@extend .h1;
+}
+
+.post header {
+	margin-bottom: 3rem;
+}
+
+.post time {
+	@extend .h5;
+	float: right;
+}
+
+.post time:after {
+	clear: both;
+}
+
+.post-content {
+	@extend .font-blog-default;
+}
+
+.post-content p, .post-content figure {
+	margin-top: 1rem;
+}

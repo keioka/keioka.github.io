@@ -1,0 +1,14 @@
+.container:not(:first-child) {
+	margin: 40px 0px;
+}
+
+.container--icon {
+	display: flex;
+	flex-flow: row;
+	width: 100%;
+}
+
+.container--icon svg {
+	width: 10%;
+	margin: 0px 1%;
+}

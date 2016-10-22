@@ -1,0 +1,11 @@
+.column-left {
+	min-width: 100px;
+	padding: 50px 40px;
+	flex-basic: auto;
+	flex-grow: 1;
+}
+
+.column-right {
+	flex: 11;
+	padding: 50px 40px;
+}

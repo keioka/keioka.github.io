@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+$main-font-family: 'Rubik', serif;
+$paragraph-font-family: 'Roboto', serif;
+
+
+// Size
+// 1em => 14px;
+
+$default-font-size: 1em;
+$label: 1em;
+$list: 1em;
+$h1: 3.2em;
+$h2: 1.8em;
+$h3: 1.6em;
+$h4: 1.4em;
+$h5: 1.2em;
+$paragraph: 1.1em;
+
+$header-padding: 1.1em;
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	padding: 1.1em 0px;
+}
+// Bold
+
+.h1 {
+	font-size: $h1;
+	font-weight: 500;
+}
+
+.md-content h1 {
+	@extend .h1;
+}
+
+.h2 {
+	font-size: $h2;
+	font-weight: 500;
+}
+
+.md-content h2 {
+	@extend .h2;
+}
+
+.h3 {
+	font-size: $h3;
+	font-weight: 500;
+}
+
+.md-content h3 {
+	@extend .h3;
+}
+
+.h4 {
+	font-size: $h4;
+	font-weight: 500;
+}
+
+.md-content h4 {
+	@extend .h4;
+}
+
+.h5 {
+	font-size: $h5;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.md-content h5 {
+	@extend .h5;
+}
+
+.font-blog-default {
+	font-size: $paragraph;
+	line-height: 1.2rem;
+}
+
+.label {
+	font-size: $label;
+	text-transform: uppercase;
+}
+
+.font-list {
+	font-size: $list;
+	font-weight: 500;
+}
+
+
