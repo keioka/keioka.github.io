@@ -7,96 +7,99 @@
 	font-family: $main-font-family;
 }
 
+.article__header h6 {
+	float: right;
+}
 
-.article {
+.md-content {
 	font-size: 16px;
 
 }
 
-.article h1 {
+.md-content h1 {
 	@extend .h1;
 }
 
-.article h2 {
+.md-content h2 {
 	@extend .h2;
 }
 
-.article h2:after{
+.md-content h2:after{
 	content: "";
 	display: block;
 	border-bottom: 2px dotted lightgray;
 	margin-top: 10px;
 }
 
-.article h3 {
+.md-content h3 {
 	@extend .h3;
 }
 
-.article h4 {
+.md-content h4 {
 	@extend .h4;
 }
 
-.article h5 {
+.md-content h5 {
 	@extend .h5;
 }
 
-.article a {
+.md-content a {
 	color: $blue;
 }
 
-.article hr {
+.md-content hr {
 	border: 4px solid lightgray;
 }
 
-.article header {
+.md-content header {
 	margin-bottom: 3rem;
 }
 
-.article time {
+.md-content time {
 	@extend .h5;
 	float: right;
 }
 
-.article time:after {
+.md-content time:after {
 	clear: both;
 }
 
-.article p, .article figure {
+.md-content p, .md-content figure {
 	margin: 0.5rem 0px 1.5rem 0px;
 }
 
-.article p {
+.md-content p {
 	line-height: 1.6em;
 	word-spacing: 1.5px;
 }
 
-.article ul, .article ol {
+.md-content ul, .md-content ol {
 	padding: 0px 20px;
 }
 
-.article li {
+.md-content li {
 	list-style-type: circle;
 }
 
-.article li:last-child {
+.md-content li:last-child {
 	margin-bottom: 25px;
 }
 
-.article pre {
+.md-content pre {
 	overflow: scroll;
 }
 
-.article table {
+.md-content table {
 	border: 2px solid lightgray;
 }
 
-.article tr, .article td, .article th {
+.md-content tr, .md-content td, .md-content th {
 	padding: 20px;
 	border: 1px solid lightgray;
 	background-color: white;
 }
 
-.article img {
+.md-content img {
 	width: 100%;
 }
 

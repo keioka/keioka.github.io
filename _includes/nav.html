@@ -1,16 +1,15 @@
 <nav class="nav">
 	<ul>
-		<a href="/"><li class="list">About me</li></a>
-		<a href="/resume"><li class="list">Resume</li></a>
-		<a href="/portfolio"><li class="list">Portofolio</li></a>
-		<a href="/blogs"><li class="list">Blog</li></a>
+		<a href="/"><li class="list list--main">About me</li></a>
+		<a href="/resume"><li class="list list--main">Resume</li></a>
+		<a href="/portfolio"><li class="list list--main">Portofolio</li></a>
 	</ul>
-	<h6 class="h6">Category</h6>
+	<h6 class="h6">Blog Category</h6>
     {% for tag in site.categories %} 
    	  <div class="list--inline">
-   	  	<label for="open">
+   	  	<input id="{{ tag[0] }}-toggle" name="{{ tag[0] }}-toggle" type="checkbox">
+   	  	<label for="{{ tag[0] }}-toggle" class="list--toggle">
      		<h4 id="{{ tag[0] }}" class="list--category" data-post-count={{ tag[1].size }}>{{ tag[0] | capitalize }}</h4>
-        	<input id="open" type="checkbox">
         </label>
 		<ul class="list--category__post">
 		  {% assign pages_list = tag[1] %}  
