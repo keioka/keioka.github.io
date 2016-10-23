@@ -2,5 +2,6 @@
 layout: default
 ---
 <div class="md-content">
-{% markdown markdown/resume/content.md %}
+{% capture my-include %}{% include markdown/resume/content.md %}{% endcapture %}
+{{ my-include | markdownify }}
 </div>

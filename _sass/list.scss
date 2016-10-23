@@ -36,7 +36,7 @@
 
 .list--category:before {
 	display: inline-block;
-	content: " -> ";
+	content: "";
 }
 
 .list--category:after {
@@ -47,8 +47,8 @@
 	font-size: 0.8em;
 	line-height: 15px;
 	padding: 4px;
-	border-radius: 50%;
-	background-color: $red;
+	border-radius: 4px;
+	background-color: $green;
 	color: $white;
 	text-align: center;
 }

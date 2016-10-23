@@ -1,24 +1,56 @@
-.post h1 {
+.article :not(.article__header) {
+	font-family: $paragraph-font-family;
+	line-height: 1.2rem;
+}
+
+.article h1 {
 	@extend .h1;
 }
 
-.post header {
+.article header {
 	margin-bottom: 3rem;
 }
 
-.post time {
+.article time {
 	@extend .h5;
 	float: right;
 }
 
-.post time:after {
+.article time:after {
 	clear: both;
 }
 
-.post-content {
-	@extend .font-blog-default;
-}
-
-.post-content p, .post-content figure {
+.article p, .article figure {
 	margin-top: 1rem;
 }
+
+.post-list {
+	padding: 20px 0px;
+}
+
+.post-list .post-date {
+	@extend .h5;
+}
+
+.post-list {
+	background-color: white;
+	border-radius: 4px;
+	border: 1px solid lightgray;
+	box-shadow: 1px 2px 2px 2px rgba(40, 40, 40, 0.1);
+	padding: 0px 40px;
+}
+
+.post-date {
+	float: right;
+}
+
+.post-category {
+	padding: 5px 10px;
+	border-radius: 4px; 
+	background-color: $green;
+	color: white;
+}
+
+.clear {
+	clear: both;
+} 

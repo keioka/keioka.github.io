@@ -1,12 +1,21 @@
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight {
+.highlighter-rouge pre {
   font-family: $main-font-family;
   margin: 1rem 0px;
   padding: 20px 20px;
   border-radius: 4px;
   background-color: $black;
 }
+
+code.highlighter-rouge {
+  display: inline-block;
+  background-color: $black;
+  color: white;
+  padding: 2px 12px;
+  border-radius: 4px;
+}
+
 .highlight .gh {
   color: #999999;
 }
