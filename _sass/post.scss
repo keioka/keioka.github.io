@@ -1,15 +1,57 @@
-.article :not(.article__header) {
+.article:not(.article__header) {
 	font-family: $paragraph-font-family;
 	line-height: 1.2rem;
+}
+
+.article__header {
+	font-family: $main-font-family;
 }
 
 .article h1 {
 	@extend .h1;
 }
 
+.article h2 {
+	@extend .h2;
+}
+
+.article h2:after{
+	content: "";
+	display: block;
+	border-bottom: 2px dotted lightgray;
+	margin-top: 10px;
+}
+
+.article h3 {
+	@extend .h3;
+}
+
+.article h4 {
+	@extend .h4;
+}
+
+.article h5 {
+	@extend .h5;
+}
+
+.article a {
+	color: $blue;
+}
+
+.article hr {
+	border: 4px solid lightgray;
+}
+
+
+
+
+
+
 .article header {
 	margin-bottom: 3rem;
 }
+
+
 
 .article time {
 	@extend .h5;
@@ -21,12 +63,39 @@
 }
 
 .article p, .article figure {
-	margin-top: 1rem;
+	margin: 0.5rem 0px 1.5rem 0px;
 }
 
-.article a {
-	color: $blue;
+
+
+
+
+.article ul, .article ol {
+	padding: 0px 20px;
 }
+
+.article li {
+	list-style-type: circle;
+}
+
+.article li:last-child {
+	margin-bottom: 25px;
+}
+
+.article pre {
+	overflow: scroll;
+}
+
+.article table {
+	border: 2px solid lightgray;
+}
+
+.article tr, .article td, .article th {
+	padding: 20px;
+	border: 1px solid lightgray;
+	background-color: white;
+}
+
 
 .post-list {
 	padding: 20px 0px;

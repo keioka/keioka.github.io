@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700');
 
 
 $main-font-family: 'Rubik', serif;
@@ -17,18 +17,18 @@ $h2: 1.8em;
 $h3: 1.6em;
 $h4: 1.4em;
 $h5: 1.2em;
+$h6: 0.8em;
 $paragraph: 1.1em;
 
 $header-padding: 1.1em;
 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-	padding: 1.1em 0px;
-}
 // Bold
 
 .h1 {
 	font-size: $h1;
 	font-weight: 500;
+	line-height: 3rem;
+	padding: 1rem 0px;
 }
 
 .md-content h1 {
@@ -38,7 +38,10 @@ $header-padding: 1.1em;
 .h2 {
 	font-size: $h2;
 	font-weight: 500;
+	padding: 2rem 0px;
+	line-height: 2rem;
 }
+
 
 .md-content h2 {
 	@extend .h2;
@@ -47,6 +50,8 @@ $header-padding: 1.1em;
 .h3 {
 	font-size: $h3;
 	font-weight: 500;
+	padding: 0.9em 0px;
+	line-space: 1.2rem;
 }
 
 .md-content h3 {
@@ -56,6 +61,7 @@ $header-padding: 1.1em;
 .h4 {
 	font-size: $h4;
 	font-weight: 500;
+	padding: 0.4em 0px;
 }
 
 .md-content h4 {
@@ -66,6 +72,19 @@ $header-padding: 1.1em;
 	font-size: $h5;
 	font-weight: 400;
 	font-style: italic;
+	padding: 0.2em 0px;
+}
+
+.md-content h5 {
+	@extend .h5;
+}
+
+.h6 {
+	font-size: $h6;
+	font-weight: 700;
+	font-family: $paragraph-font-family;
+	text-transform: uppercase;
+	padding: 0.2em 0px;
 }
 
 .md-content h5 {

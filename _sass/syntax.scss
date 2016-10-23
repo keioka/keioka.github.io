@@ -19,6 +19,9 @@ code.highlighter-rouge {
 .highlight .gh {
   color: #999999;
 }
+.highlight .gh {
+  color: #999999;
+}
 .highlight .sr {
   color: #f6aa11;
 }
@@ -201,3 +204,28 @@ code.highlighter-rouge {
 .highlight .o {
   color: #f92672;
 }
+
+.language {
+  position: relative;
+  background-color: $black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  top: 17px;
+  left: 0px;
+  font-size: 10px;
+}
+
+.language-html:before {
+  @extend .language;
+  content: "HTML";
+}
+.language-css:before {
+  @extend .language;
+  content: "CSS";
+}
+.language-javascript:before {
+  @extend .language;
+  content: "JS";
+}
+

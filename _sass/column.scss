@@ -1,11 +1,17 @@
 .column-left {
 	min-width: 100px;
-	padding: 50px 40px;
+	padding: 60px 20px;
 	flex-basic: auto;
 	flex-grow: 1;
 }
 
 .column-right {
 	flex: 20;
-	padding: 50px 40px;
+	padding: 60px 20px;
+	min-width: 0;
+}
+
+
+.column-right:first-child, .column-right header .h1 {
+	padding-top: 0px;
 }
