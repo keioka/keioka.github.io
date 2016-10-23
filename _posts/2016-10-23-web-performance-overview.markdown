@@ -1,5 +1,9 @@
 ---
-published: false
+published: true
+layout: post
+title: Web Performance Overview
+date: '2016-10-21 02:56:10 -0700'
+categories: ['Performance']
 ---
 # Why web performance?
 
