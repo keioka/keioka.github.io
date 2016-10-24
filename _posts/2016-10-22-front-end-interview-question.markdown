@@ -4,8 +4,6 @@ layout: post
 title: Front End Interview Question
 date: '2016-10-21 02:56:10 -0700'
 categories: ['Interview Question']
-
-
 ---
 # HTML Question
 
@@ -86,9 +84,6 @@ Prioritizing visible content (or above the fold rendering) where you include onl
 
 	- text/plain
 	
-
-
-
 ---
 # CSS Questions
 

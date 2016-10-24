@@ -1,8 +1,8 @@
 .column-left {
-	min-width: 100px;
-	padding: 60px 20px;
-	flex-basic: auto;
+	padding: 60px 0px;
+	flex-basis: 250px;
 	flex-grow: 1;
+	flex-direction: row
 }
 
 .column-right {
