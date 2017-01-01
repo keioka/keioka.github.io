@@ -1,10 +1,9 @@
 .article:not(.article__header) {
-	font-family: $paragraph-font-family;
-	line-height: 1.2rem;
 }
 
 .article__header {
 	font-family: $main-font-family;
+	padding-bottom: 80px;
 }
 
 .article__header h6 {
@@ -12,8 +11,7 @@
 }
 
 .md-content {
-	font-size: 16px;
-
+	font-size: 14px;
 }
 
 .md-content h1 {
