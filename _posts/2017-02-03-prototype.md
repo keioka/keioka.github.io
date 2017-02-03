@@ -48,6 +48,7 @@ console.log(dog.stop()) //"Baw"
 ```
 
 since ES5, it is better syntax.
+
 ```javascript
 var dog = Object.create(Animal);
 
