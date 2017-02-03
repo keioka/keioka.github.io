@@ -1,5 +1,8 @@
 ---
-published: false
+published: true
+layout: post
+title: prototype 
+categories: ['Javascript']
 ---
 # Prototype
 
