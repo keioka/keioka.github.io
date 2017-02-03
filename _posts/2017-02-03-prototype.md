@@ -1,8 +1,9 @@
 ---
 published: true
 layout: post
-title: prototype 
-categories: ['Javascript']
+title: prototype
+categories:
+  - Javascript
 ---
 # Prototype
 
@@ -22,6 +23,7 @@ The syntax `someObject.[[Prototype]]` referes prototype of someObject which is e
 ### How prototypal inheritance works
 
 Here is parent object.
+
 ```javascript
 var animal = {
   bark: function(bark){  
@@ -65,6 +67,7 @@ console.log(dog.stop()) //"Baw"
 Variable is pass by value. When you refer the property of an object, it is not passed by value which means not copy of the value. It refers to parent property through prototype chain. Deep prototype chain can make program slower so that we have to make sure you don't create too deep to refer unnecessarily.
 
 Ex1:) Pass by Reference 
+
 ```javascript
 var animal = {
   name: "kei" 
@@ -82,6 +85,7 @@ dog.name // "John"
 ```
 
 Ex2:) Pass by Reference 
+
 ```javascript
 var e = {
   message: "Hello"
@@ -113,6 +117,7 @@ console.log(b); //[1,2,3]
 ```
 
 Ex4:) Pass by value
+
 ```javascript
 
 var c = {
@@ -158,6 +163,7 @@ var animal = new Animal("Kei");
 
 var plant = new Plant("John");
 ```
+
 ![img](../img/prototype/Screen-Shot3.png)
 ![img](../img/prototype/Screen-Shot4.png)
 
@@ -191,6 +197,7 @@ console.log(animal.printName());
 
 console.log(plant.printName());
 ```
+
 ![img](../img/prototype/Screen-Shot7.png)
 ![img](../img/prototype/Screen-Shot8.png)
 
@@ -206,10 +213,9 @@ function plant(name){
 
 plant("John");
 ```
+
 What if we call this plant function as not a constructor but function.
 Unless object created from a constructor, this context is global scope in this case so that this context will be the `window`.
-
-
 
 
 ```javascript
@@ -283,6 +289,7 @@ myCat.__proto__
 //  getName: function()
 //  __proto__: Object
 ```
+
 #### What is constructor?
 
 Instance objects does not have constructor property. Prototype of constructor function has constructor.
@@ -290,6 +297,7 @@ Instance objects does not have constructor property. Prototype of constructor fu
 
 
 #### What is function constructor and instance object
+
 ```javascript
 Cat.__proto__ === Function.prototype
 Cat.prototype.__proto__ === Object.prototype
@@ -347,5 +355,3 @@ console.log(m.bind({x: 10})()) //=> 10
 console.log(m.bind({y: 10})()) //=> undefined
 ```
 [feature-detection-vs-inference](http://lucybain.com/blog/2014/feature-detection-vs-inference/)
-
-
